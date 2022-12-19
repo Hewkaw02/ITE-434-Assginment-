@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TNI1911310512.MainPage">
+
+    <ScrollView>
+        <StackLayout BackgroundColor="LightBlue" Spacing="5" Padding="10">
+
+
+            <Image Source="ihome"/>
+
+            <Picker x:Name="colorPicker">
+
+                <Picker.Items>
+                    <x:String> Green </x:String>
+                    <x:String> Yellow </x:String>
+                    <x:String> Red</x:String>
+                </Picker.Items>    
+                
+            </Picker> 
+            
+            
+            <Frame BackgroundColor="LightGreen" CornerRadius="10">
+                          
+                
+            <Label 
+                x:Name="textViewName"
+                Margin="20" 
+                Text="Phitchaya" 
+                TextColor="Gray"
+                HorizontalTextAlignment="Center" 
+                FontSize="Large" 
+                />
+
+            </Frame>
+            <Entry 
+                x:Name="editTextName"
+                Margin="10" 
+                Placeholder="Text here!!!" 
+                Keyboard="Text"/>
+
+            <Button 
+                x:Name="sendName"
+                Margin="10"
+                Text="Send!!"/>
+
+            <Slider 
+                x:Name="sliderValue"
+                Minimum="0" 
+                Maximum="100" 
+                Value="25"/>
+
+
+            <Label x:Name="numStepper" Text="0" HorizontalOptions="Center"/>
+
+            <Stepper x:Name="countStepper" Minimum="0" Maximum="10" Value="0" Increment="1" HorizontalOptions="Center"/>
+
+            
+
+            <Switch x:Name="openSwitch" HorizontalOptions="Center" IsToggled="True"/>
+
+            <SearchBar />
+
+            <ProgressBar ProgressColor="Red" Progress="0.5"/>
+
+            <ActivityIndicator IsRunning="True" IsVisible="False"/>
+
+            <Frame Margin="20" CornerRadius="30" HasShadow="True">
+
+                <ScrollView Orientation="Horizontal" >
+                    <StackLayout Orientation="Horizontal" >
+                        <BoxView 
+                            Color="Yellow" 
+                            HeightRequest="50"
+                            HorizontalOptions="Center" 
+                            WidthRequest="100"/>
+
+                        <BoxView 
+                            Color="Green" 
+                            HeightRequest="50"
+                            HorizontalOptions="Fill" 
+                            WidthRequest="100"/>
+
+                        <BoxView 
+                            Color="Red" 
+                            HeightRequest="50"
+                            HorizontalOptions="Center" 
+                            WidthRequest="100"/>
+
+                        <BoxView 
+                            Color="Blue" 
+                            HeightRequest="50"
+                            HorizontalOptions="Fill" 
+                            WidthRequest="100"/>
+                    </StackLayout>
+                </ScrollView>
+            </Frame>
+
+            <Editor HeightRequest="100"/>
+
+            <DatePicker />
+
+            <TimePicker />
+
+            <BoxView 
+                Color="Yellow" 
+                HeightRequest="50"
+                HorizontalOptions="Fill" 
+                WidthRequest="100"/>
+
+            <BoxView 
+                Color="Yellow" 
+                HeightRequest="50"
+                HorizontalOptions="Center" 
+                WidthRequest="100"/>
+
+            <BoxView 
+                Color="Yellow" 
+                HeightRequest="50"
+                HorizontalOptions="Center" 
+                WidthRequest="100"/>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

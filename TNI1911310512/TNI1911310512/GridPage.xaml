@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TNI1911310512.GridPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <BoxView BackgroundColor="Red" Grid.Column="2" Grid.Row="1"/>
+        <BoxView BackgroundColor="Green" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2"/>
+        <BoxView BackgroundColor="Pink" Grid.Column="0" Grid.Row="1" Grid.RowSpan="2"/>
+        <BoxView BackgroundColor="LightBlue" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" HeightRequest="100"/>
+    </Grid>
+    
+    
+    
+</ContentPage>

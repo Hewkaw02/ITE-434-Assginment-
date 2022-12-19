@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TNI1911310512.LoginPage">
+    <StackLayout    BackgroundColor="DarkSalmon" Padding="40">
+
+
+        <Frame CornerRadius="30" Padding="20" VerticalOptions="Center" HasShadow="True"  >
+
+            <StackLayout Padding="15"> 
+                <Image Source="loginlogo" HeightRequest="120"/>
+
+                <Entry Placeholder="UserName"/>
+
+                <Entry Placeholder="Password"/>
+
+                <Button Text="Login"/>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+</ContentPage>

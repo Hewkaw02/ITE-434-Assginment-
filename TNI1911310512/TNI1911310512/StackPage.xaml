@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TNI1911310512.StackPage">
+    <ScrollView>
+    <StackLayout BackgroundColor="LightGray" Orientation="Vertical" Spacing="5">
+        <BoxView Color="Green" HeightRequest="200"/>
+        <BoxView Color="Red" HeightRequest="200"/>
+        <BoxView Color="Blue" HeightRequest="200"/>
+
+            <ScrollView Orientation="Horizontal">
+                <StackLayout Orientation="Horizontal">
+            
+                    <BoxView Color="Green" WidthRequest="200"/>
+                    <BoxView Color="Red" WidthRequest="200"/>
+                    <BoxView Color="Blue" WidthRequest="200"/>
+
+
+                </StackLayout>
+            </ScrollView>
+        <BoxView Color="Green" HeightRequest="200"/>
+        <BoxView Color="Red" HeightRequest="200"/>
+        <BoxView Color="Blue" HeightRequest="200"/>
+    </StackLayout>
+    </ScrollView>
+</ContentPage>
